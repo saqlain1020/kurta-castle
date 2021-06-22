@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "src/Components/Navbar/Navbar";
 import Routes from "./Routes";
 import TopBar from "src/Components/TopBar/TopBar";
+import Footer from "src/Components/Footer/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <TopBar/>
         <Navbar />
         <Routes />
+        <Footer/>
       </Container>
     </>
   );

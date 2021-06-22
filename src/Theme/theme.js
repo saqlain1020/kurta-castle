@@ -30,6 +30,9 @@ const theme = createMuiTheme({
       h4: {
         color: "#333333",
       },
+      colorTextSecondary:{
+          color :"inherit"
+      }
     },
     MuiLinearProgress: {
       root: {

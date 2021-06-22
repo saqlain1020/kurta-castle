@@ -4,14 +4,22 @@ import { Typography } from "@material-ui/core";
 import { Container } from "@material-ui/core";
 import clsx from "clsx";
 import { NavLink } from "react-router-dom";
+import { slide as Menu } from "react-burger-menu";
+import "./burgerMenuCss.css";
+import { Hidden } from "@material-ui/core";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     height: 80,
   },
   container: {
     display: "flex",
-    justifyContent: "space-between",
     alignItems: "center",
+    justifyContent: "space-between",
+    [theme.breakpoints.down("xs")]:{
+      justifyContent: "center",
+
+    }
   },
   link: {
     textDecoration: "none",
@@ -19,8 +27,8 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 20,
     position: "relative",
     textTransform: "uppercase",
-    letterSpacing:2,
-    fontWeight:400,
+    letterSpacing: 2,
+    fontWeight: 400,
     "&:hover": {
       "&::after": {
         width: "100%",
@@ -40,19 +48,18 @@ const useStyles = makeStyles((theme) => ({
   activeLink: {
     color: "#d4af37",
   },
-  btn:{
-    marginLeft:20,
-  }
+  btn: {
+    marginLeft: 20,
+  },
 }));
 
 const Navbar = () => {
   const classes = useStyles();
 
   return (
-    <div className={clsx(classes.root, "center")}>
-      <Container maxWidth="lg" className={classes.container}>
-        <Typography variant="h4">Kurta Castle</Typography>
-        <div>
+    <>
+      <Hidden smUp>
+        <Menu right>
           <NavLink
             to="/"
             className={classes.link}
@@ -65,24 +72,52 @@ const Navbar = () => {
             to="/gallery"
             className={classes.link}
             activeClassName={classes.activeLink}
+            style={{ marginTop: 10 }}
           >
             Gallery
           </NavLink>
           <Button
-          color="primary"
-          variant="contained"  className={classes.btn}>
-          Place Order
-          </Button>
-          {/* <NavLink
-            to="/place-order"
-            className={classes.link}
-            activeClassName={classes.activeLink}
+            color="primary"
+            variant="contained"
+            className={classes.btn}
+            style={{ marginTop: 20 }}
           >
             Place Order
-          </NavLink> */}
-        </div>
-      </Container>
-    </div>
+          </Button>
+        </Menu>
+      </Hidden>
+      <div className={clsx(classes.root, "center")}>
+        <Container maxWidth="lg" className={classes.container}>
+          <Typography variant="h4" >Kurta Castle</Typography>
+          <Hidden xsDown>
+            <div>
+              <NavLink
+                to="/"
+                className={classes.link}
+                activeClassName={classes.activeLink}
+                exact
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/gallery"
+                className={classes.link}
+                activeClassName={classes.activeLink}
+              >
+                Gallery
+              </NavLink>
+              <Button
+                color="primary"
+                variant="contained"
+                className={classes.btn}
+              >
+                Place Order
+              </Button>
+            </div>
+          </Hidden>
+        </Container>
+      </div>
+    </>
   );
 };
 
