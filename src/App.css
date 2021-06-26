@@ -38,9 +38,10 @@ font-family: 'Balsamiq Sans', cursive; */
 }
 .sectionHeading {
   /* font-family: 'Calistoga', cursive !important; */
-  font-weight: 500 !important;
+  font-weight: 700 !important;
+  font-family: 'Noto Serif', serif !important;
   /* color: goldenrod !important; */
-  font-family: "Roboto", sans-serif !important;
+  /* font-family: "Roboto", sans-serif !important; */
   position: relative;
   display: inline;
   /* font-family: 'Balsamiq Sans', cursive !important; */

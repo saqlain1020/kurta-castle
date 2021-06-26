@@ -21,9 +21,9 @@ const Home = () => {
             <HomeSlider/>
             <Bg>
 
-            <Features/>
             <AboutSection/>
             <NewArrivals/>
+            <Features/>
             </Bg>
         </div>
     )

@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     "&::before": {
       content: "''",
-      background: `url(${Background})`,
+      // background: `url(${Background})`,
       opacity: 0.05,
       top: 0,
       left: 0,
