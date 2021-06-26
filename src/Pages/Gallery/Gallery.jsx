@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, Typography } from "@material-ui/core";
+import { Grid, makeStyles, Typography } from "@material-ui/core";
 import "photoswipe/dist/photoswipe.css";
 import "photoswipe/dist/default-skin/default-skin.css";
 import { Gallery as GallerySwipe, Item } from "react-photoswipe-gallery";
@@ -12,13 +12,17 @@ import Img5 from "src/Assets/images/5.jpg";
 import ReactGallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import data from "./data";
+import clsx from "clsx";
 
 const useStyles = makeStyles((theme) => ({
-  root: {},
+  root: {
+    marginTop: 30,
+  },
   img: {
     width: 300,
     margin: 5,
   },
+  heading: {},
 }));
 
 const Gallery = () => {
@@ -26,7 +30,7 @@ const Gallery = () => {
   const [currentImage, setCurrentImage] = React.useState(0);
   const [viewerIsOpen, setViewerIsOpen] = React.useState(false);
 
-  const openLightbox = React.useCallback((event, { photo, index }) => {
+  const openLightbox = React.useCallback((index) => {
     setCurrentImage(index);
     setViewerIsOpen(true);
   }, []);
@@ -38,9 +42,26 @@ const Gallery = () => {
   return (
     <div className={classes.root}>
       <Container maxWidth="lg">
-        <Typography variant="h4" style={{marginBottom:20}}>Our Best Collections</Typography>
-        <div>
-          <ReactGallery photos={data} onClick={openLightbox} />
+        <Typography
+          variant="h4"
+          className={clsx("sectionHeading", classes.heading)}
+        >
+          Our Best Collections
+        </Typography>
+        <div style={{ marginTop: 20 }}>
+          <Grid container spacing={2}>
+            {data.map((item, index) => (
+              <Grid item xs={6} sm={4} md={3}>
+                <img
+                  src={item.src}
+                  width="100%"
+                  height="300px"
+                  onClick={() => openLightbox(index)}
+                />
+              </Grid>
+            ))}
+          </Grid>
+          {/* <ReactGallery photos={data} onClick={openLightbox} /> */}
           <ModalGateway>
             {viewerIsOpen ? (
               <Modal onClose={closeLightbox}>
