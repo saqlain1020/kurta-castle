@@ -11,7 +11,11 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const useStyles = makeStyles((theme) => ({
-  root: {   },
+  root: {  
+paddingTop:20,
+background:theme.palette.primary.main
+
+   },
   imgDiv: {
     height: "calc(100vh - 130px)",
     backgroundSize: "cover",
