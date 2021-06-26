@@ -7,9 +7,10 @@ import clsx from "clsx";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    paddingTop: 20,background: "rgb(212,175,55,0.05)",
-    paddingBottom:20,
-    marginTop:50,
+    paddingTop: 20,
+    background: "rgb(212,175,55,0.05)",
+    paddingBottom: 20,
+    marginTop: 50,
   },
   card: {
     padding: 20,
@@ -31,6 +32,10 @@ const useStyles = makeStyles((theme) => ({
   container: {
     // background: "rgb(212,175,55,0.05)",
   },
+  para: {
+    fontSize: 14  ,
+    fontWeight:500,
+  },
 }));
 
 const Features = () => {
@@ -49,38 +54,47 @@ const Features = () => {
             <Grid item xs={12} sm={4}>
               <div className={classes.card}>
                 <AcUnitIcon className={classes.icon} />
-                <Typography color="textPrimary">
-                  <b>Easy To Wear and unwear :)</b>
-                  <br />
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Reici
-                </Typography>
+                <div>
+                  <Typography color="textPrimary">
+                    <b>Easy To Wear and unwear :)</b>
+                  </Typography>
+                  <Typography className={classes.para}>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Reici
+                  </Typography>
+                </div>
               </div>
             </Grid>
             <Grid item xs={12} sm={4}>
               <div className={classes.card}>
                 <AcUnitIcon className={classes.icon} />
-                <Typography color="textPrimary">
-                  <b>Easy To Wear and unwear :)</b>
-                  <br />
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Reici
-                </Typography>
+                <div>
+                  <Typography color="textPrimary">
+                    <b>Easy To Wear and unwear :)</b>
+                  </Typography>
+                  <Typography className={classes.para}>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Reici
+                  </Typography>
+                </div>
               </div>
             </Grid>
             <Grid item xs={12} sm={4}>
               <div className={classes.card}>
                 <AcUnitIcon className={classes.icon} />
-                <Typography color="textPrimary">
-                  <b>Easy To Wear and unwear :)</b>
-                  <br />
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Reici
-                </Typography>
+                <div>
+                  <Typography color="textPrimary">
+                    <b>Easy To Wear and unwear :)</b>
+                  </Typography>
+                  <Typography className={classes.para}>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Reici
+                  </Typography>
+                </div>
               </div>
             </Grid>
           </Grid>
-        </Container>{" "}
+        </Container>
       </div>
     </div>
   );

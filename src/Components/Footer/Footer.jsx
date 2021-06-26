@@ -83,6 +83,9 @@ const Footer = () => {
               <Typography variant="h6" color="textSecondary" style={{marginBottom:10,}}> <b>About</b></Typography>
               <Typography color="textSecondary">
                   We are very good at what we do so you should trust us at what we do...
+              </Typography><br/>
+              <Typography color="textSecondary">
+                Ph: +92-00-000000
               </Typography>
           </Grid>
         </Grid>
