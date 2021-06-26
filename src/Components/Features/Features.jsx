@@ -48,7 +48,6 @@ const Features = () => {
             </div>
           </Grid>
           <Grid item xs={6} sm={4}>
-            {" "}
             <div className={clsx("center", classes.card)}>
               <AcUnitIcon className={classes.icon} />
               <Typography color="textPrimary" align="center">
@@ -58,7 +57,6 @@ const Features = () => {
             </div>
           </Grid>
           <Grid item xs={6} sm={4}>
-            {" "}
             <div className={clsx("center", classes.card)}>
               <AcUnitIcon className={classes.icon} />
               <Typography color="textPrimary" align="center">
