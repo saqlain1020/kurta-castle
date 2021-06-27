@@ -23,6 +23,31 @@ const useStyles = makeStyles((theme) => ({
     margin: 5,
   },
   heading: {},
+  imageWrapper: {
+    height: 350,
+    // overflow: "hidden",
+    boxShadow: "0px 5px 15px rgba(0,0,0,0.2)",
+    position: "relative",
+    "& img": {
+      objectFit: "cover",
+      borderRadius: 10,
+      transition: "all 200ms ease-in-out",
+    },
+    "&:hover": {
+      "& > div > img": {
+        transform: "scale(1.2)",
+      },
+    },
+  },
+  blurImage: {
+    position: "absolute",
+    borderRadius: 10,
+    filter: "blur(12px)",
+    top: 12,
+    opacity: 0.5,
+    left: 0,
+    zIndex: -1,
+  },
 }));
 
 const Gallery = () => {
@@ -52,16 +77,31 @@ const Gallery = () => {
           <Grid container spacing={2}>
             {data.map((item, index) => (
               <Grid item xs={6} sm={4} md={3}>
-                <img
-                  src={item.src}
-                  width="100%"
-                  height="300px"
-                  onClick={() => openLightbox(index)}
-                />
+                <div className={classes.imageWrapper}>
+                  <img
+                    src={item.src}
+                    width="100%"
+                    height="100%"
+                    className={classes.blurImage}
+                  />
+                  <div
+                    style={{
+                      height: "100%",
+                      overflow: "hidden",
+                      borderRadius: 10,
+                    }}
+                  >
+                    <img
+                      src={item.src}
+                      width="100%"
+                      height="100%"
+                      onClick={() => openLightbox(index)}
+                    />
+                  </div>
+                </div>
               </Grid>
             ))}
           </Grid>
-          {/* <ReactGallery photos={data} onClick={openLightbox} /> */}
           <ModalGateway>
             {viewerIsOpen ? (
               <Modal onClose={closeLightbox}>
