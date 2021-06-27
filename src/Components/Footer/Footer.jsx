@@ -8,6 +8,7 @@ import {
 } from "@material-ui/core";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
+import SlidingText from "../SlidingText/SlidingText";
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: "#222",
@@ -25,72 +26,87 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     fontSize: 35,
   },
-  link:{
+  link: {
     color: "inherit",
     textDecoration: "none",
-    marginBottom:15,
+    marginBottom: 15,
   },
-  linkContainer:{
-      display:"flex",
-      flexFlow: "column",
-      paddingTop:10,
-      alignItems:"flex-start"
+  linkContainer: {
+    display: "flex",
+    flexFlow: "column",
+    paddingTop: 10,
+    alignItems: "flex-start",
   },
-  
 }));
 
 const Footer = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Container maxWidth="lg">
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={4}>
-            <div>
-              <Typography variant="h4" className={classes.heading}>
-                Kurta Castle
-              </Typography>
+    <>
+      <SlidingText text="Best brand in town, Reasonable prices and fantastic quality." />
+      <div className={classes.root}>
+        <Container maxWidth="lg">
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={4}>
               <div>
-                <IconButton className={classes.iconBtn}>
-                  <i className={clsx("fab fa-facebook-f", classes.icon)}></i>
-                </IconButton>
-                <IconButton className={classes.iconBtn}>
-                  <i className={clsx("fab fa-instagram", classes.icon)}></i>
-                </IconButton>
-                <IconButton className={classes.iconBtn}>
-                  <i
-                    className={clsx("fab fa-snapchat-ghost", classes.icon)}
-                  ></i>
-                </IconButton>
-                <IconButton className={classes.iconBtn}>
-                  <i className={clsx("fas fa-phone", classes.icon)}></i>
-                </IconButton>
-                <IconButton className={classes.iconBtn}>
-                  <i className={clsx("far fa-envelope", classes.icon)}></i>
-                </IconButton>
+                <Typography variant="h4" className={classes.heading}>
+                  Kurta Castle
+                </Typography>
+                <div>
+                  <IconButton className={classes.iconBtn}>
+                    <i className={clsx("fab fa-facebook-f", classes.icon)}></i>
+                  </IconButton>
+                  <IconButton className={classes.iconBtn}>
+                    <i className={clsx("fab fa-instagram", classes.icon)}></i>
+                  </IconButton>
+                  <IconButton className={classes.iconBtn}>
+                    <i
+                      className={clsx("fab fa-snapchat-ghost", classes.icon)}
+                    ></i>
+                  </IconButton>
+                  <IconButton className={classes.iconBtn}>
+                    <i className={clsx("fas fa-phone", classes.icon)}></i>
+                  </IconButton>
+                  <IconButton className={classes.iconBtn}>
+                    <i className={clsx("far fa-envelope", classes.icon)}></i>
+                  </IconButton>
+                </div>
               </div>
-            </div>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <div className={classes.linkContainer}>
-              <Link to="/" className={classes.link}>Home</Link>
-              <Link to="/gallery" className={classes.link}>Gallery</Link>
-              <Link to="/place-order" className={classes.link}>Place Order</Link>
-            </div>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-              <Typography variant="h6" color="textSecondary" style={{marginBottom:10,}}> <b>About</b></Typography>
-              <Typography color="textSecondary">
-                  We are very good at what we do so you should trust us at what we do...
-              </Typography><br/>
-              <Typography color="textSecondary">
-                Ph: +92-00-000000
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <div className={classes.linkContainer}>
+                <Link to="/" className={classes.link}>
+                  Home
+                </Link>
+                <Link to="/gallery" className={classes.link}>
+                  Gallery
+                </Link>
+                <Link to="/place-order" className={classes.link}>
+                  Place Order
+                </Link>
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Typography
+                variant="h6"
+                color="textSecondary"
+                style={{ marginBottom: 10 }}
+              >
+                {" "}
+                <b>About</b>
               </Typography>
+              <Typography color="textSecondary">
+                We are very good at what we do so you should trust us at what we
+                do...
+              </Typography>
+              <br />
+              <Typography color="textSecondary">Ph: +92-00-000000</Typography>
+            </Grid>
           </Grid>
-        </Grid>
-      </Container>
-    </div>
+        </Container>
+      </div>
+    </>
   );
 };
 
