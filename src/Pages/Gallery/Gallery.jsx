@@ -6,7 +6,6 @@ import Img2 from "src/Assets/images/2.jpg";
 import Img3 from "src/Assets/images/3.jpg";
 import Img4 from "src/Assets/images/4.jpg";
 import Img5 from "src/Assets/images/5.jpg";
-import ReactGallery from "react-photo-gallery";
 import data from "./data";
 import clsx from "clsx";
 import CustomGallery from "src/Components/CustomGallery/CustomGallery";
