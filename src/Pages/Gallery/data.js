@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
   },
@@ -27,3 +27,5 @@ export default [
     src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
   },
 ];
+
+export default data;
