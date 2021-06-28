@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     background: "rgb(212,175,55,0.05)",
     paddingBottom: 100,
     marginTop: 50,
-    // marginBottom:100,
+    marginBottom:50,
   },
   card: {
     padding: 20,
