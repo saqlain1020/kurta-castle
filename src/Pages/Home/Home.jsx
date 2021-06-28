@@ -5,6 +5,7 @@ import AboutSection from 'src/Components/AboutSection/AboutSection';
 import Features from 'src/Components/Features/Features';
 import Bg from 'src/Components/Bg/Bg';
 import NewArrivals from 'src/Components/NewArrivals/NewArrivals';
+import NewArrivals2 from 'src/Components/NewArrivals2/NewArrivals2';
 
 const useStyles = makeStyles((theme)=>({
     root:{
@@ -21,8 +22,9 @@ const Home = () => {
             <HomeSlider/>
             <Bg>
 
-            <AboutSection/>
             <NewArrivals/>
+            <NewArrivals2/>
+            <AboutSection/>
             <Features/>
             </Bg>
         </div>

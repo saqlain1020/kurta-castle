@@ -7,9 +7,9 @@ import clsx from "clsx";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    paddingTop: 20,
+    paddingTop: 50,
     background: "rgb(212,175,55,0.05)",
-    paddingBottom: 20,
+    paddingBottom: 50,
     marginTop: 50,
   },
   card: {
@@ -27,14 +27,14 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     height: 30,
     width: 30,
-    marginRight: 10,
+    marginRight: 20,
   },
   container: {
     // background: "rgb(212,175,55,0.05)",
   },
   para: {
-    fontSize: 14  ,
-    fontWeight:500,
+    fontSize: 14,
+    fontWeight: 500,
   },
 }));
 
@@ -51,7 +51,7 @@ const Features = () => {
       <div className={classes.container}>
         <Container maxWidth="lg">
           <Grid container spacing={1} style={{ marginTop: 20 }}>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={12} md={4}>
               <div className={classes.card}>
                 <AcUnitIcon className={classes.icon} />
                 <div>
@@ -59,13 +59,15 @@ const Features = () => {
                     <b>Easy To Wear and unwear :)</b>
                   </Typography>
                   <Typography className={classes.para}>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Reici
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Laborum iste, illo, sequi corporis a id vero nemo
+                    consectetur quam provident corrupti. Quo asperiores officia,
+                    eaque placeat minima laborum! Soluta, sapiente.
                   </Typography>
                 </div>
               </div>
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={12} md={4}>
               <div className={classes.card}>
                 <AcUnitIcon className={classes.icon} />
                 <div>
@@ -73,13 +75,16 @@ const Features = () => {
                     <b>Easy To Wear and unwear :)</b>
                   </Typography>
                   <Typography className={classes.para}>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Reici
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum consequatur laboriosam nesciunt omnis, veritatis
+                    expedita facilis vitae provident repellat, debitis
+                    aspernatur! Aut quis minima sit neque, iure nostrum vitae
+                    laudantium!
                   </Typography>
                 </div>
               </div>
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={12} md={4}>
               <div className={classes.card}>
                 <AcUnitIcon className={classes.icon} />
                 <div>
@@ -87,8 +92,10 @@ const Features = () => {
                     <b>Easy To Wear and unwear :)</b>
                   </Typography>
                   <Typography className={classes.para}>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Reici
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Laborum iste, illo, sequi corporis a id vero nemo
+                    consectetur quam provident corrupti. Quo asperiores officia,
+                    eaque placeat minima laborum! Soluta, sapiente.
                   </Typography>
                 </div>
               </div>

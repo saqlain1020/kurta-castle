@@ -14,19 +14,26 @@ import clsx from "clsx";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: 50,
+    marginTop: 80,
+    [theme.breakpoints.down("xs")]: {
+      marginTop: 0,
+    },
   },
   heading: {
     fontWeight: 700,
     fontFamily: "'Noto Serif', serif",
-    marginBottom: "20px !important",
+    marginBottom: 20,
+    [theme.breakpoints.down("xs")]: {
+      // fontSize:35
+      textAlign: "left",
+    },
   },
   img: {
     marginTop: 20,
     boxShadow: "0 6px 30px 0 rgb(212 175 55 / 20%)",
   },
   img2: {
-    marginTop: 20,
+    marginTop: 50,
     boxShadow: "0 0px 20px 0 rgb(212 175 55 / 20%)",
     borderTopLeftRadius: 360,
     borderTopRightRadius: 360,
@@ -44,31 +51,32 @@ const useStyles = makeStyles((theme) => ({
       borderWidth: 3,
     },
   },
+  rightSection: {
+    display: "flex",
+    flexFlow: "column",
+    alignItems: "flex-end",
+    [theme.breakpoints.down("xs")]: {
+      alignItems: "flex-start",
+    },
+  },
+  rightPara: {
+    textAlign: "right",
+    maxWidth: 600,
+    [theme.breakpoints.down("xs")]: {
+      textAlign: "left",
+    },
+  },
 }));
 
-const NewArrivals = () => {
+const NewArrivals2 = () => {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Container maxWidth="lg">
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={7}>
-            <Typography
-              variant="h3"
-              className={clsx("sectionHeading", classes.heading)}
-            >
-              Our Fine Kurtas
-            </Typography>
-            <Typography style={{ maxWidth: 600 }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              voluptatem odio amet accusamus hic deserunt quos id ab adipisci
-              ex! Exercitationem aliquam .
-            </Typography>
-            <img src={K1} width="80%" alt="" className={classes.img} />
-          </Grid>
           <Grid item xs={12} sm={5}>
-            <img src={K2} width="100%" alt="" className={classes.img2} />
+            <img src={K3} width="100%" alt="" className={classes.img2} />
             <Typography>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               voluptatem odio amet accusamus hic deserunt quos id ab adipisci
@@ -83,10 +91,21 @@ const NewArrivals = () => {
               See more...
             </Button>
           </Grid>
+          <Grid item xs={12} sm={7} className={classes.rightSection}>
+            <Typography variant="h3" className={clsx("sectionHeading",classes.heading)} align="right">
+              Our Fire Collection
+            </Typography>
+            <Typography className={classes.rightPara}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              voluptatem odio amet accusamus hic deserunt quos id ab adipisci
+              ex! Exercitationem aliquam .
+            </Typography>
+            <img src={K4} width="80%" alt="" className={classes.img} />
+          </Grid>
         </Grid>
       </Container>
     </div>
   );
 };
 
-export default NewArrivals;
+export default NewArrivals2;

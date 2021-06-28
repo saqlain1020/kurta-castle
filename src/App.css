@@ -44,7 +44,7 @@ font-family: 'Balsamiq Sans', cursive; */
   /* color: goldenrod !important; */
   /* font-family: "Roboto", sans-serif !important; */
   position: relative;
-  display: inline;
+  display: inline-block;
   /* font-family: 'Balsamiq Sans', cursive !important; */
 }
 .sectionHeading::after {
