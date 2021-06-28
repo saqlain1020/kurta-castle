@@ -31,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
   img: {
     marginTop: 20,
     boxShadow: "0 6px 30px 0 rgb(212 175 55 / 20%)",
+    [theme.breakpoints.down('xs')]:{
+      width:"100%"
+    }
   },
   img2: {
     marginTop: 50,
@@ -57,12 +60,15 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "flex-end",
     [theme.breakpoints.down("xs")]: {
       alignItems: "flex-start",
+      flexFlow:"column-reverse"
     },
   },
   rightPara: {
-    textAlign: "right",
-    maxWidth: 600,
+    textAlign: "left",
+    maxWidth: "80%",
     [theme.breakpoints.down("xs")]: {
+      maxWidth: "100%",
+      marginTop:20,
       textAlign: "left",
     },
   },
