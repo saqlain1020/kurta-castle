@@ -9,7 +9,7 @@ import { Hidden } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: 30,
-    marginBottom: 30,
+    marginBottom: 50,
   },
   form: {
     marginTop: 50,

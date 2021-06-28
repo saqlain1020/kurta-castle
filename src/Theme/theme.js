@@ -30,9 +30,9 @@ const theme = createMuiTheme({
       h4: {
         color: "#333333",
       },
-      colorTextSecondary:{
-          color :"inherit"
-      }
+      colorTextSecondary: {
+        color: "inherit",
+      },
     },
     MuiLinearProgress: {
       root: {
@@ -46,11 +46,16 @@ const theme = createMuiTheme({
         // borderRadius: 7,
         "& fieldset": {
           // borderWidth: "0px !important",
-          borderColor: "rgba(0,0,0,0.1)"
+          borderColor: "rgba(0,0,0,0.1)",
+          borderColor: "rgba(233,215,155,0.5)",
+        },
+        "&:hover > fieldset": {
+          // borderWidth: "0px !important",
+          borderColor: "rgba(233,215,155,1) !important",
         },
       },
       notchedOutline: {
-        // boxShadow: "0 0 10px rgb(0 0 0 / 10%)",
+        boxShadow: "0 4px 5px rgba(233,215,155,.4)",
       },
     },
     MuiButton: {
