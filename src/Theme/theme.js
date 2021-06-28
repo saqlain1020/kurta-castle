@@ -42,14 +42,15 @@ const theme = createMuiTheme({
     },
     MuiOutlinedInput: {
       root: {
-        background: "white",
-        borderRadius: 7,
+        // background: "white",
+        // borderRadius: 7,
         "& fieldset": {
-          borderWidth: "0px !important",
+          // borderWidth: "0px !important",
+          borderColor: "rgba(0,0,0,0.1)"
         },
       },
       notchedOutline: {
-        boxShadow: "0 0 10px rgb(0 0 0 / 10%)",
+        // boxShadow: "0 0 10px rgb(0 0 0 / 10%)",
       },
     },
     MuiButton: {

@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 import "./burgerMenuCss.css";
 import { Hidden } from "@material-ui/core";
+import history from "src/Util/history";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -62,6 +63,10 @@ const Navbar = () => {
   const handleClose = () => {
     setOpen(false);
   };
+  const orderClick = () => {
+    history.push("/form");
+    handleClose();
+  };
   return (
     <>
       <Hidden smUp>
@@ -89,7 +94,7 @@ const Navbar = () => {
             variant="contained"
             className={classes.btn}
             style={{ marginTop: 20 }}
-            onClick={handleClose}
+            onClick={orderClick}
           >
             Place Order
           </Button>
@@ -119,6 +124,7 @@ const Navbar = () => {
                 color="primary"
                 variant="contained"
                 className={classes.btn}
+                onClick={orderClick}
               >
                 Place Order
               </Button>
