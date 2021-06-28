@@ -31,9 +31,9 @@ const useStyles = makeStyles((theme) => ({
   img: {
     marginTop: 20,
     boxShadow: "0 6px 30px 0 rgb(212 175 55 / 20%)",
-    [theme.breakpoints.down('xs')]:{
-      width:"100%"
-    }
+    [theme.breakpoints.down("xs")]: {
+      width: "100%",
+    },
   },
   img2: {
     marginTop: 50,
@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "flex-end",
     [theme.breakpoints.down("xs")]: {
       alignItems: "flex-start",
-      flexFlow:"column-reverse"
+      flexFlow: "column-reverse",
     },
   },
   rightPara: {
@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "80%",
     [theme.breakpoints.down("xs")]: {
       maxWidth: "100%",
-      marginTop:20,
+      marginTop: 20,
       textAlign: "left",
     },
   },
@@ -84,10 +84,13 @@ const NewArrivals2 = () => {
           <Grid item xs={12} sm={5}>
             <img src={K3} width="100%" alt="" className={classes.img2} />
             <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              voluptatem odio amet accusamus hic deserunt quos id ab adipisci
-              ex! Exercitationem aliquam eveniet et officiis vitae fugiat
-              molestias dolor deserunt.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel in
+              saepe numquam fuga nihil nam excepturi veritatis, quos qui ullam
+              similique provident ipsum minus nisi voluptate quia molestias,
+              tempore sequi? Enim, ducimus, unde repellendus dolor veritatis
+              quos quidem dolorem earum reprehenderit, ut fugiat inventore
+              voluptate eaque rerum neque ea et maiores distinctio maxime
+              architecto ipsa hic! Eum nam repellat doloremque.
             </Typography>
             {/* <Button
               color="primary"
@@ -102,9 +105,14 @@ const NewArrivals2 = () => {
               Our Fire Collection
             </Typography> */}
             <Typography className={classes.rightPara}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              voluptatem odio amet accusamus hic deserunt quos id ab adipisci
-              ex! Exercitationem aliquam .
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem libero natus quod cupiditate quo sapiente, vero
+              distinctio delectus accusamus architecto atque, magni vel maxime
+              corporis beatae rerum, id inventore perspiciatis? Tempora libero
+              perferendis quisquam, ratione suscipit, perspiciatis quibusdam
+              officiis architecto possimus reiciendis repellendus rem asperiores
+              laborum quaerat eos veritatis ut nesciunt. Voluptas maxime eveniet
+              quia dicta laudantium iusto molestiae eos.
             </Typography>
             <img src={K4} width="80%" alt="" className={classes.img} />
           </Grid>
