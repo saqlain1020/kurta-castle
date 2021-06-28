@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Container maxWidth="xl" disableGutters>
-        {/* <TopBar/> */}
+        <TopBar/>
         <Navbar />
         <Routes />
         <Footer/>
