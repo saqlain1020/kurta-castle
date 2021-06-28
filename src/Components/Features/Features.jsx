@@ -4,6 +4,7 @@ import { Typography } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 import AcUnitIcon from "@material-ui/icons/AcUnit";
 import clsx from "clsx";
+import Zoom from "react-reveal/Zoom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,53 +53,61 @@ const Features = () => {
         <Container maxWidth="lg">
           <Grid container spacing={1} style={{ marginTop: 20 }}>
             <Grid item xs={12} sm={12} md={4}>
-              <div className={classes.card}>
-                <AcUnitIcon className={classes.icon} />
-                <div>
-                  <Typography color="textPrimary">
-                    <b>Easy To Wear and unwear :)</b>
-                  </Typography>
-                  <Typography className={classes.para}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Laborum iste, illo, sequi corporis a id vero nemo
-                    consectetur quam provident corrupti. Quo asperiores officia,
-                    eaque placeat minima laborum! Soluta, sapiente.
-                  </Typography>
+              <Zoom>
+                <div className={classes.card}>
+                  <AcUnitIcon className={classes.icon} />
+                  <div>
+                    <Typography color="textPrimary">
+                      <b>Easy To Wear and unwear :)</b>
+                    </Typography>
+                    <Typography className={classes.para}>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Laborum iste, illo, sequi corporis a id vero nemo
+                      consectetur quam provident corrupti. Quo asperiores
+                      officia, eaque placeat minima laborum! Soluta, sapiente.
+                    </Typography>
+                  </div>
                 </div>
-              </div>
+              </Zoom>
             </Grid>
             <Grid item xs={12} sm={12} md={4}>
-              <div className={classes.card}>
-                <AcUnitIcon className={classes.icon} />
-                <div>
-                  <Typography color="textPrimary">
-                    <b>Easy To Wear and unwear :)</b>
-                  </Typography>
-                  <Typography className={classes.para}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Illum consequatur laboriosam nesciunt omnis, veritatis
-                    expedita facilis vitae provident repellat, debitis
-                    aspernatur! Aut quis minima sit neque, iure nostrum vitae
-                    laudantium!
-                  </Typography>
-                </div>
-              </div>
+              {" "}
+              <Zoom>
+                <div className={classes.card}>
+                  <AcUnitIcon className={classes.icon} />
+                  <div>
+                    <Typography color="textPrimary">
+                      <b>Easy To Wear and unwear :)</b>
+                    </Typography>
+                    <Typography className={classes.para}>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Illum consequatur laboriosam nesciunt omnis, veritatis
+                      expedita facilis vitae provident repellat, debitis
+                      aspernatur! Aut quis minima sit neque, iure nostrum vitae
+                      laudantium!
+                    </Typography>
+                  </div>
+                </div>{" "}
+              </Zoom>
             </Grid>
             <Grid item xs={12} sm={12} md={4}>
-              <div className={classes.card}>
-                <AcUnitIcon className={classes.icon} />
-                <div>
-                  <Typography color="textPrimary">
-                    <b>Easy To Wear and unwear :)</b>
-                  </Typography>
-                  <Typography className={classes.para}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Laborum iste, illo, sequi corporis a id vero nemo
-                    consectetur quam provident corrupti. Quo asperiores officia,
-                    eaque placeat minima laborum! Soluta, sapiente.
-                  </Typography>
-                </div>
-              </div>
+              {" "}
+              <Zoom>
+                <div className={classes.card}>
+                  <AcUnitIcon className={classes.icon} />
+                  <div>
+                    <Typography color="textPrimary">
+                      <b>Easy To Wear and unwear :)</b>
+                    </Typography>
+                    <Typography className={classes.para}>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Laborum iste, illo, sequi corporis a id vero nemo
+                      consectetur quam provident corrupti. Quo asperiores
+                      officia, eaque placeat minima laborum! Soluta, sapiente.
+                    </Typography>
+                  </div>
+                </div>{" "}
+              </Zoom>
             </Grid>
           </Grid>
         </Container>

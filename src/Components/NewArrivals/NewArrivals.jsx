@@ -11,6 +11,7 @@ import K2 from "src/Assets/images/kurta2.jpg";
 import K3 from "src/Assets/images/kurta3.jpg";
 import K4 from "src/Assets/images/kurta4.jpg";
 import clsx from "clsx";
+import Fade from "react-reveal/Fade";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -65,10 +66,14 @@ const NewArrivals = () => {
               voluptatem odio amet accusamus hic deserunt quos id ab adipisci
               ex! Exercitationem aliquam .
             </Typography>
-            <img src={K1} width="80%" alt="" className={classes.img} />
+            <Fade>
+              <img src={K1} width="80%" alt="" className={classes.img} />
+            </Fade>
           </Grid>
           <Grid item xs={12} sm={5}>
-            <img src={K2} width="100%" alt="" className={classes.img2} />
+            <Fade>
+              <img src={K2} width="100%" alt="" className={classes.img2} />
+            </Fade>
             <Typography>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               voluptatem odio amet accusamus hic deserunt quos id ab adipisci

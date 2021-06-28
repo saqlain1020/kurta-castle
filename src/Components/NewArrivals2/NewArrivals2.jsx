@@ -11,6 +11,7 @@ import K2 from "src/Assets/images/kurta2.jpg";
 import K3 from "src/Assets/images/kurta3.jpg";
 import K4 from "src/Assets/images/kurta4.jpg";
 import clsx from "clsx";
+import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -82,6 +83,8 @@ const NewArrivals2 = () => {
       <Container maxWidth="lg">
         <Grid container spacing={2}>
           <Grid item xs={12} sm={5}>
+            <Fade>
+
             <img src={K3} width="100%" alt="" className={classes.img2} />
             <Typography>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel in
@@ -92,6 +95,7 @@ const NewArrivals2 = () => {
               voluptate eaque rerum neque ea et maiores distinctio maxime
               architecto ipsa hic! Eum nam repellat doloremque.
             </Typography>
+            </Fade>
             {/* <Button
               color="primary"
               variant="outlined"
@@ -104,6 +108,7 @@ const NewArrivals2 = () => {
             {/* <Typography variant="h3" className={clsx("sectionHeading",classes.heading)} align="right">
               Our Fire Collection
             </Typography> */}
+
             <Typography className={classes.rightPara}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem libero natus quod cupiditate quo sapiente, vero
@@ -114,7 +119,9 @@ const NewArrivals2 = () => {
               laborum quaerat eos veritatis ut nesciunt. Voluptas maxime eveniet
               quia dicta laudantium iusto molestiae eos.
             </Typography>
+            <Fade>
             <img src={K4} width="80%" alt="" className={classes.img} />
+            </Fade>
           </Grid>
         </Grid>
       </Container>
