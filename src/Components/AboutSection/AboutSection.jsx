@@ -10,8 +10,13 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 20,
   },
   container: {
-    minHeight: "100vh",
     flexFlow: "column",
+    marginTop: 200,
+    marginBottom: 200,
+    [theme.breakpoints.down("xs")]: {
+      marginTop: 100,
+      marginBottom: 100,
+    },
   },
 }));
 
