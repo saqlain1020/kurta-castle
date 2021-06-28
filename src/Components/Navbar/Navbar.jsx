@@ -11,16 +11,15 @@ import { Hidden } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     height: 80,
-    boxShadow: "0px 0px 15px rgba(0,0,0,0.1)"
+    boxShadow: "0px 0px 15px rgba(0,0,0,0.1)",
   },
   container: {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    [theme.breakpoints.down("xs")]:{
+    [theme.breakpoints.down("xs")]: {
       justifyContent: "center",
-
-    }
+    },
   },
   link: {
     textDecoration: "none",
@@ -56,15 +55,22 @@ const useStyles = makeStyles((theme) => ({
 
 const Navbar = () => {
   const classes = useStyles();
-
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <>
       <Hidden smUp>
-        <Menu right>
+        <Menu right isOpen={open} onOpen={handleOpen} onClose={handleClose}>
           <NavLink
             to="/"
             className={classes.link}
             activeClassName={classes.activeLink}
+            onClick={handleClose}
             exact
           >
             Home
@@ -74,6 +80,7 @@ const Navbar = () => {
             className={classes.link}
             activeClassName={classes.activeLink}
             style={{ marginTop: 10 }}
+            onClick={handleClose}
           >
             Gallery
           </NavLink>
@@ -82,6 +89,7 @@ const Navbar = () => {
             variant="contained"
             className={classes.btn}
             style={{ marginTop: 20 }}
+            onClick={handleClose}
           >
             Place Order
           </Button>
@@ -89,7 +97,7 @@ const Navbar = () => {
       </Hidden>
       <div className={clsx(classes.root, "center")}>
         <Container maxWidth="lg" className={classes.container}>
-          <Typography variant="h4" >Kurta Castle</Typography>
+          <Typography variant="h4">Kurta Castle</Typography>
           <Hidden xsDown>
             <div>
               <NavLink

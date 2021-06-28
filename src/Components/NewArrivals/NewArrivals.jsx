@@ -58,7 +58,7 @@ const NewArrivals = () => {
               variant="h3"
               className={clsx("sectionHeading", classes.heading)}
             >
-              Our Fine Kurtas
+              Our Collection
             </Typography>
             <Typography style={{ maxWidth: 600 }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
@@ -75,13 +75,13 @@ const NewArrivals = () => {
               ex! Exercitationem aliquam eveniet et officiis vitae fugiat
               molestias dolor deserunt.
             </Typography>
-            <Button
+            {/* <Button
               color="primary"
               variant="outlined"
               className={classes.seeBtn}
             >
               See more...
-            </Button>
+            </Button> */}
           </Grid>
         </Grid>
       </Container>

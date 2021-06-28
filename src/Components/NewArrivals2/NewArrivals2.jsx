@@ -83,18 +83,18 @@ const NewArrivals2 = () => {
               ex! Exercitationem aliquam eveniet et officiis vitae fugiat
               molestias dolor deserunt.
             </Typography>
-            <Button
+            {/* <Button
               color="primary"
               variant="outlined"
               className={classes.seeBtn}
             >
               See more...
-            </Button>
+            </Button> */}
           </Grid>
           <Grid item xs={12} sm={7} className={classes.rightSection}>
-            <Typography variant="h3" className={clsx("sectionHeading",classes.heading)} align="right">
+            {/* <Typography variant="h3" className={clsx("sectionHeading",classes.heading)} align="right">
               Our Fire Collection
-            </Typography>
+            </Typography> */}
             <Typography className={classes.rightPara}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               voluptatem odio amet accusamus hic deserunt quos id ab adipisci
