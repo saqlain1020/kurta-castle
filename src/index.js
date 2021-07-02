@@ -12,7 +12,9 @@ ReactDOM.render(
   <React.StrictMode>
     <Router history={history}>
       <ThemeProvider theme={theme}>
-        <App />
+        <ScrollToTop>
+          <App />
+        </ScrollToTop>
       </ThemeProvider>
     </Router>
   </React.StrictMode>,
@@ -23,3 +25,16 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+function ScrollToTop({ children }) {
+  React.useEffect(() => {
+    const unlisten = history.listen(() => {
+      window.scrollTo(0, 0);
+    });
+    return () => {
+      unlisten();
+    };
+  }, [history]);
+
+  return <>{children}</>;
+}
