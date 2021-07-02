@@ -1,31 +1,32 @@
 const data = [
   {
-    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    src: require("src/Assets/images/gallery/1.jpg").default,
   },
   {
-    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
+    src: require("src/Assets/images/gallery/2.jpg").default,
   },
   {
-    src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+    src: require("src/Assets/images/gallery/3.jpg").default,
   },
   {
-    src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
+    src: require("src/Assets/images/gallery/4.jpg").default,
   },
   {
-    src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
+    src: require("src/Assets/images/gallery/5.jpg").default,
   },
   {
-    src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+    src: require("src/Assets/images/gallery/6.jpg").default,
   },
   {
-    src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+    src: require("src/Assets/images/gallery/7.jpg").default,
   },
   {
-    src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+    src: require("src/Assets/images/gallery/8.jpg").default,
   },
   {
-    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+    src: require("src/Assets/images/gallery/9.jpg").default,
   },
+  
 ];
 
 export default data;

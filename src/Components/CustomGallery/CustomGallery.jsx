@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     "& img": {
       objectFit: "cover",
+      objectPosition:"top",
       borderRadius: 5,
       transition: "all 200ms ease-in-out",
     },

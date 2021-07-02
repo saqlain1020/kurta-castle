@@ -30,21 +30,19 @@ const AboutSection = () => {
           <Typography variant="h2" className="sectionHeading" align="center">
             About Us
           </Typography>
-          <Slide left>
-            <Typography align="center" style={{ marginTop: 50 }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              iure qui tenetur, doloribus nihil natus quibusdam error suscipit,
-              illum odio praesentium sit ex reiciendis! Impedit dolore similique
-              nobis inventore corporis! Voluptate quisquam dolore vel fuga quia
-              maxime quod aliquid! Voluptatibus reprehenderit vel numquam quas
-              odit, repellendus, eum, officiis nemo totam architecto maxime
-              culpa quis expedita dolorem libero animi reiciendis
-              exercitationem? Placeat sunt architecto error quisquam odio vel
-              sint omnis molestiae earum quis, perspiciatis, aperiam alias a.
-              Fuga officia porro, cumque aut velit illo maxime a, doloremque
-              atque totam voluptatum architecto.
-            </Typography>
-          </Slide>
+
+          <Typography align="center" style={{ marginTop: 50 }}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iure
+            qui tenetur, doloribus nihil natus quibusdam error suscipit, illum
+            odio praesentium sit ex reiciendis! Impedit dolore similique nobis
+            inventore corporis! Voluptate quisquam dolore vel fuga quia maxime
+            quod aliquid! Voluptatibus reprehenderit vel numquam quas odit,
+            repellendus, eum, officiis nemo totam architecto maxime culpa quis
+            expedita dolorem libero animi reiciendis exercitationem? Placeat
+            sunt architecto error quisquam odio vel sint omnis molestiae earum
+            quis, perspiciatis, aperiam alias a. Fuga officia porro, cumque aut
+            velit illo maxime a, doloremque atque totam voluptatum architecto.
+          </Typography>
         </div>
       </Container>
     </div>
