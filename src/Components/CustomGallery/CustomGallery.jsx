@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     "& img": {
       objectFit: "cover",
-      objectPosition:"top",
+      objectPosition: "top",
       borderRadius: 5,
       transition: "all 200ms ease-in-out",
     },
@@ -57,6 +57,7 @@ const CustomGallery = ({ data }) => {
                 width="100%"
                 height="100%"
                 className={classes.blurImage}
+                alt="kurta"
               />
               <div
                 style={{
@@ -70,6 +71,7 @@ const CustomGallery = ({ data }) => {
                   width="100%"
                   height="100%"
                   onClick={() => openLightbox(index)}
+                  alt="kurta"
                 />
               </div>
             </div>

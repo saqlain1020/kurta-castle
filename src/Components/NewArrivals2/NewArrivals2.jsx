@@ -1,17 +1,8 @@
 import React from "react";
-import {
-  Container,
-  Grid,
-  makeStyles,
-  Typography,
-  Button,
-} from "@material-ui/core";
-import K1 from "src/Assets/images/kurta1.jpg";
-import K2 from "src/Assets/images/kurta2.jpg";
+import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
 import K3 from "src/Assets/images/kurta3.jpg";
 import K4 from "src/Assets/images/kurta4.jpg";
-import clsx from "clsx";
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -84,17 +75,16 @@ const NewArrivals2 = () => {
         <Grid container spacing={2}>
           <Grid item xs={12} sm={5}>
             <Fade>
-
-            <img src={K3} width="100%" alt="" className={classes.img2} />
-            <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel in
-              saepe numquam fuga nihil nam excepturi veritatis, quos qui ullam
-              similique provident ipsum minus nisi voluptate quia molestias,
-              tempore sequi? Enim, ducimus, unde repellendus dolor veritatis
-              quos quidem dolorem earum reprehenderit, ut fugiat inventore
-              voluptate eaque rerum neque ea et maiores distinctio maxime
-              architecto ipsa hic! Eum nam repellat doloremque.
-            </Typography>
+              <img src={K3} width="100%" alt="" className={classes.img2} />
+              <Typography>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel in
+                saepe numquam fuga nihil nam excepturi veritatis, quos qui ullam
+                similique provident ipsum minus nisi voluptate quia molestias,
+                tempore sequi? Enim, ducimus, unde repellendus dolor veritatis
+                quos quidem dolorem earum reprehenderit, ut fugiat inventore
+                voluptate eaque rerum neque ea et maiores distinctio maxime
+                architecto ipsa hic! Eum nam repellat doloremque.
+              </Typography>
             </Fade>
             {/* <Button
               color="primary"
@@ -120,7 +110,7 @@ const NewArrivals2 = () => {
               quia dicta laudantium iusto molestiae eos.
             </Typography>
             <Fade>
-            <img src={K4} width="80%" alt="" className={classes.img} />
+              <img src={K4} width="80%" alt="" className={classes.img} />
             </Fade>
           </Grid>
         </Grid>

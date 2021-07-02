@@ -46,7 +46,7 @@ const theme = createMuiTheme({
         // borderRadius: 7,
         "& fieldset": {
           // borderWidth: "0px !important",
-          borderColor: "rgba(0,0,0,0.1)",
+          // borderColor: "rgba(0,0,0,0.1)",
           borderColor: "rgba(233,215,155,0.5)",
         },
         "&:hover > fieldset": {

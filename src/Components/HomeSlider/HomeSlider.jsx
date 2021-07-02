@@ -1,7 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
-import AwesomeSlider from "react-awesome-slider";
-import AwsSliderStyles from "react-awesome-slider/src/styles.js";
 import Img1 from "src/Assets/images/1.jpg";
 import Img2 from "src/Assets/images/2.jpg";
 import Img3 from "src/Assets/images/3.jpg";
@@ -11,11 +9,10 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const useStyles = makeStyles((theme) => ({
-  root: {  
-paddingTop:20,
-background:theme.palette.primary.main
-
-   },
+  root: {
+    paddingTop: 20,
+    background: theme.palette.primary.main,
+  },
   imgDiv: {
     height: "calc(100vh - 130px)",
     backgroundSize: "cover",
@@ -30,7 +27,7 @@ const HomeSlider = () => {
 
   return (
     <div className={classes.root}>
-      <Carousel autoPlay stopOnHover={false} infiniteLoop>
+      <Carousel showThumbs={false} autoPlay stopOnHover={false} infiniteLoop>
         <div>
           <div
             style={{ backgroundImage: `url(${Img1})` }}

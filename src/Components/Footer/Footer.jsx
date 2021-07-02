@@ -5,10 +5,12 @@ import {
   Grid,
   Typography,
   IconButton,
+  Button,
 } from "@material-ui/core";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
 import SlidingText from "../SlidingText/SlidingText";
+import history from "src/Util/history";
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: "#222",
@@ -82,9 +84,13 @@ const Footer = () => {
                 <Link to="/gallery" className={classes.link}>
                   Gallery
                 </Link>
-                <Link to="/place-order" className={classes.link}>
+                <Button
+                  color="primary"
+                  variant="contained"
+                  onClick={() => history.push("/form")}
+                >
                   Place Order
-                </Link>
+                </Button>
               </div>
             </Grid>
             <Grid item xs={12} sm={4}>

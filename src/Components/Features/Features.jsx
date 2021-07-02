@@ -1,9 +1,8 @@
 import React from "react";
-import { Container, makeStyles, Card } from "@material-ui/core";
+import { Container, makeStyles } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 import AcUnitIcon from "@material-ui/icons/AcUnit";
-import clsx from "clsx";
 import Zoom from "react-reveal/Zoom";
 
 const useStyles = makeStyles((theme) => ({
@@ -12,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     background: "rgb(212,175,55,0.05)",
     paddingBottom: 100,
     marginTop: 50,
-    marginBottom:50,
+    marginBottom: 50,
   },
   card: {
     padding: 20,

@@ -1,15 +1,7 @@
 import React from "react";
-import {
-  Container,
-  Grid,
-  makeStyles,
-  Typography,
-  Button,
-} from "@material-ui/core";
+import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
 import K1 from "src/Assets/images/kurta1.jpg";
 import K2 from "src/Assets/images/kurta2.jpg";
-import K3 from "src/Assets/images/kurta3.jpg";
-import K4 from "src/Assets/images/kurta4.jpg";
 import clsx from "clsx";
 import Fade from "react-reveal/Fade";
 

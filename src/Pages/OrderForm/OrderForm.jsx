@@ -39,7 +39,7 @@ const OrderForm = () => {
     shoulder: "",
     chest: "",
     waist: "",
-    hip: "",
+    hips: "",
     sleeves: "",
     thigh: "",
     calf: "",
@@ -81,6 +81,7 @@ const OrderForm = () => {
                 variant="outlined"
                 color="primary"
                 value={state.name}
+                required
               />
             </Grid>
             {/* Email */}
@@ -93,6 +94,7 @@ const OrderForm = () => {
                 variant="outlined"
                 color="primary"
                 value={state.email}
+                required
               />
             </Grid>
             {/* Contact Number */}
@@ -105,6 +107,7 @@ const OrderForm = () => {
                 variant="outlined"
                 color="primary"
                 value={state.contact}
+                required
               />
             </Grid>
             {/* Address */}
@@ -118,6 +121,7 @@ const OrderForm = () => {
                 fullWidth
                 variant="outlined"
                 color="primary"
+                required
               />
             </Grid>
             <Grid item xs={12} sm={8}>
@@ -132,6 +136,7 @@ const OrderForm = () => {
                     variant="outlined"
                     color="primary"
                     value={state.shoulder}
+                    required
                   />
                 </Grid>
                 {/* Chest */}
@@ -144,6 +149,7 @@ const OrderForm = () => {
                     variant="outlined"
                     color="primary"
                     value={state.chest}
+                    required
                   />
                 </Grid>
                 {/* Waist */}
@@ -156,6 +162,7 @@ const OrderForm = () => {
                     variant="outlined"
                     color="primary"
                     value={state.waist}
+                    required
                   />
                 </Grid>
                 {/* Hips */}
@@ -168,6 +175,7 @@ const OrderForm = () => {
                     variant="outlined"
                     color="primary"
                     value={state.hips}
+                    required
                   />
                 </Grid>
                 {/* Sleeves */}
@@ -180,6 +188,7 @@ const OrderForm = () => {
                     variant="outlined"
                     color="primary"
                     value={state.sleeves}
+                    required
                   />
                 </Grid>
                 {/* Shalwar Length */}
@@ -192,6 +201,7 @@ const OrderForm = () => {
                     variant="outlined"
                     color="primary"
                     value={state.shalwarLength}
+                    required
                   />
                 </Grid>
                 {/* Thigh */}
@@ -204,6 +214,7 @@ const OrderForm = () => {
                     variant="outlined"
                     color="primary"
                     value={state.thigh}
+                    required
                   />
                 </Grid>
                 {/* Calf */}
@@ -216,6 +227,7 @@ const OrderForm = () => {
                     variant="outlined"
                     color="primary"
                     value={state.calf}
+                    required
                   />
                 </Grid>
                 {/* Kurta Length */}
@@ -228,6 +240,7 @@ const OrderForm = () => {
                     variant="outlined"
                     color="primary"
                     value={state.kurtaLength}
+                    required
                   />
                 </Grid>
                 {/* Collar */}
@@ -240,6 +253,7 @@ const OrderForm = () => {
                     variant="outlined"
                     color="primary"
                     value={state.collar}
+                    required
                   />
                 </Grid>
               </Grid>
@@ -251,6 +265,7 @@ const OrderForm = () => {
                   src={KurtaImg}
                   width="100%"
                   style={{ maxHeight: 360, objectFit: "contain" }}
+                  alt="kurta-lengths"
                 />
               </Grid>
             </Hidden>

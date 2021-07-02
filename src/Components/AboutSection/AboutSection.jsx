@@ -2,9 +2,6 @@ import React from "react";
 import { Container, makeStyles } from "@material-ui/core";
 import clsx from "clsx";
 import { Typography } from "@material-ui/core";
-import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
-import Slide from "react-reveal/Slide";
 const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: 20,

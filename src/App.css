@@ -40,11 +40,12 @@ font-family: 'Balsamiq Sans', cursive; */
 .sectionHeading {
   /* font-family: 'Calistoga', cursive !important; */
   font-weight: 700 !important;
-  font-family: 'Noto Serif', serif !important;
+  font-family: "Noto Serif", serif !important;
   /* color: goldenrod !important; */
   /* font-family: "Roboto", sans-serif !important; */
   position: relative;
   display: inline-block;
+  cursor: pointer;
   /* font-family: 'Balsamiq Sans', cursive !important; */
 }
 .sectionHeading::after {
@@ -57,10 +58,10 @@ font-family: 'Balsamiq Sans', cursive; */
   background: gold;
   transition: all 200ms ease-in-out;
 }
-.sectionHeading:hover{
-  color: white
+.sectionHeading:hover {
+  color: white;
 }
-.sectionHeading:hover::after{
+.sectionHeading:hover::after {
   height: 100%;
   z-index: -1;
 }
