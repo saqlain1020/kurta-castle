@@ -84,13 +84,9 @@ const Footer = () => {
                 <Link to="/gallery" className={classes.link}>
                   Gallery
                 </Link>
-                <Button
-                  color="primary"
-                  variant="contained"
-                  onClick={() => history.push("/form")}
-                >
+                <Link to="/form" className={classes.link}>
                   Place Order
-                </Button>
+                </Link>
               </div>
             </Grid>
             <Grid item xs={12} sm={4}>
@@ -99,7 +95,6 @@ const Footer = () => {
                 color="textSecondary"
                 style={{ marginBottom: 10 }}
               >
-                {" "}
                 <b>About</b>
               </Typography>
               <Typography color="textSecondary">
