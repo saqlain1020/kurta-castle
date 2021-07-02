@@ -29,7 +29,7 @@ reportWebVitals();
 function ScrollToTop({ children }) {
   React.useEffect(() => {
     const unlisten = history.listen(() => {
-      window.scrollTo(0, 0);
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
     return () => {
       unlisten();
