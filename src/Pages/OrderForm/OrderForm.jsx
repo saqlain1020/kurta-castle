@@ -6,6 +6,8 @@ import clsx from "clsx";
 import KurtaImg from "src/Assets/images/kurta.jpeg";
 import { Hidden } from "@material-ui/core";
 import { firestore } from "src/Firebase";
+import { Dialog } from "@material-ui/core";
+import swal from "sweetalert";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -54,7 +56,7 @@ const OrderForm = () => {
       e.preventDefault();
       console.log(state);
       await firestore.collection("orders").add(state);
-      //TODO: need to add order confirm model
+      swal("Order Placed!", "We will contact you shortly...", "success");
     } catch (error) {
       console.log(error);
     }
