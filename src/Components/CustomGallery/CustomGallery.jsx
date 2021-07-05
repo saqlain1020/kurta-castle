@@ -50,10 +50,10 @@ const CustomGallery = ({ data }) => {
     <div>
       <Grid container spacing={2}>
         {data.map((item, index) => (
-          <Grid item xs={6} sm={4} md={3}>
+          <Grid item xs={6} sm={4} md={3} key={index}>
             <div className={classes.imageWrapper}>
               <img
-                src={item.src}
+                src={item.url}
                 width="100%"
                 height="100%"
                 className={classes.blurImage}
@@ -84,9 +84,9 @@ const CustomGallery = ({ data }) => {
             <Carousel
               currentIndex={currentImage}
               views={data.map((x) => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title,
+                src: x.url,
+                // srcset: x.srcSet,
+                // caption: x.title,
               }))}
             />
           </Modal>
