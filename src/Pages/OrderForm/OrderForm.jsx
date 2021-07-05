@@ -5,6 +5,7 @@ import { Typography } from "@material-ui/core";
 import clsx from "clsx";
 import KurtaImg from "src/Assets/images/kurta.jpeg";
 import { Hidden } from "@material-ui/core";
+import { firestore } from "src/Firebase";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,9 +49,15 @@ const OrderForm = () => {
     collar: "",
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(state);
+  const handleSubmit = async (e) => {
+    try {
+      e.preventDefault();
+      console.log(state);
+      await firestore.collection("orders").add(state);
+      //TODO: need to add order confirm model
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const handleInput = (e) => {
