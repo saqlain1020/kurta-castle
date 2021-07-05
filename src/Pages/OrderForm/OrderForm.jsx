@@ -55,7 +55,7 @@ const OrderForm = () => {
     try {
       e.preventDefault();
       console.log(state);
-      await firestore.collection("orders").add(state);
+      // await firestore.collection("orders").add(state);
       swal("Order Placed!", "We will contact you shortly...", "success");
     } catch (error) {
       console.log(error);

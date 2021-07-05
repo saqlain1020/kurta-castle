@@ -65,3 +65,6 @@ font-family: 'Balsamiq Sans', cursive; */
   height: 100%;
   z-index: -1;
 }
+.swal-button--confirm {
+  background: goldenrod !important;
+}

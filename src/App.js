@@ -9,10 +9,14 @@ function App() {
   return (
     <>
       <Container maxWidth="xl" disableGutters>
-        <TopBar/>
-        <Navbar />
-        <Routes />
-        <Footer/>
+        <div
+          style={{ minHeight: "100vh", display: "flex", flexFlow: "column" }}
+        >
+          <TopBar />
+          <Navbar />
+          <Routes />
+          <Footer />
+        </div>
       </Container>
     </>
   );

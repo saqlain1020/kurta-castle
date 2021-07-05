@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { makeStyles, Typography } from "@material-ui/core";
 import { Container } from "@material-ui/core";
 
@@ -10,22 +10,23 @@ import { firestore } from "src/Firebase";
 const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: 30,
+    marginBottom: "auto",
   },
 }));
 
 const Gallery = () => {
-  var [images,setImages] = useState([]);
+  var [images, setImages] = useState([]);
   useEffect(() => {
-    var gallery = []
+    var gallery = [];
     var fetchImages = async () => {
       var query = await firestore.collection("images").get();
-      query.docs.forEach(doc => {
-        gallery.push(doc.data())
-      })
-      setImages(gallery)
-    }
-    fetchImages()
-  },[])
+      query.docs.forEach((doc) => {
+        gallery.push(doc.data());
+      });
+      setImages(gallery);
+    };
+    fetchImages();
+  }, []);
   const classes = useStyles();
   return (
     <div className={classes.root}>
