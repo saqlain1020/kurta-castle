@@ -67,7 +67,7 @@ const CustomGallery = ({ data }) => {
                 }}
               >
                 <img
-                  src={item.src}
+                  src={item.url}
                   width="100%"
                   height="100%"
                   onClick={() => openLightbox(index)}

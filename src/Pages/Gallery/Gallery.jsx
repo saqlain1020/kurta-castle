@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { makeStyles, Typography } from "@material-ui/core";
 import { Container } from "@material-ui/core";
 
 import data from "./data";
 import clsx from "clsx";
 import CustomGallery from "src/Components/CustomGallery/CustomGallery";
+import { firestore } from "src/Firebase";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -13,8 +14,19 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Gallery = () => {
+  var [images,setImages] = useState([]);
+  useEffect(() => {
+    var gallery = []
+    var fetchImages = async () => {
+      var query = await firestore.collection("images").get();
+      query.docs.forEach(doc => {
+        gallery.push(doc.data())
+      })
+      setImages(gallery)
+    }
+    fetchImages()
+  },[])
   const classes = useStyles();
-
   return (
     <div className={classes.root}>
       <Container maxWidth="lg">
@@ -25,7 +37,7 @@ const Gallery = () => {
           Our Best Collections
         </Typography>
         <div style={{ marginTop: 40, marginBottom: 50 }}>
-          <CustomGallery data={data} />
+          <CustomGallery data={images} />
         </div>
       </Container>
     </div>
